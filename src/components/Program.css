@@ -1,0 +1,178 @@
+
+body {
+    overflow-x: hidden;
+}
+
+section {
+    padding: 3% 5%;
+}
+
+.program, .new-program {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0 2rem;
+}
+
+.program {
+    background-color: black;
+    color: #fff;
+}
+
+.new-program {
+    background-color: #fff;
+    color: black;
+}
+
+.new-program h1 {
+    padding: 1rem 0 2rem;
+}
+
+/* Health section */
+.health {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+.program .health .items,
+.new-program .health .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+    width: 45%;
+    height: 60vh;
+    padding: 0 1rem;
+    color: white;
+    box-shadow: 6px 6px 1px rgba(0, 0, 0, 0.4), -3px -3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.program .health .items {
+    background-color: gray;
+    color: #fff;
+}
+
+.new-program .health .items {
+    background-color: white;
+    color: black;
+}
+
+.new-program .health .items:hover {
+    box-shadow: none;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #e8a705, #ed4908);
+    color: #fff;
+}
+
+
+/* Hover effects */
+.health .items:hover {
+    cursor: pointer;
+    background: linear-gradient(to bottom, #e8a705, #ed4908);
+    color: #fff;
+}
+
+/* Image hover animation */
+.health .items img {
+    width: 30%;
+    padding: 1rem;
+}
+
+
+
+/* Text styling */
+.health .items h3 {
+    font-size: 1rem;
+    font-weight: bolder;
+    line-height: 1.2;
+}
+
+.health .items p {
+    font-size: 0.9rem;
+    font-weight: thin;
+    line-height: 1.2;
+}
+
+/* Button styling */
+
+.items button {
+    padding: 0.4rem 0.8rem;
+    background-color: green;
+    border: none;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+}
+
+.items button:hover {
+    letter-spacing: 1px;
+}
+
+
+/* media query */
+
+@media (max-width: 1024px) {
+    .program, .new-program {
+        width: 100%;
+    }
+    .program .health, .new-program .health{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        width: 100%;
+    }
+    .program .health .items, .new-program .health .items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 400px;
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .program, .new-program {
+        width: 100%;
+    }
+    .program .health, .new-program .health{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        width: 100%;
+    }
+    .program .health .items, .new-program .health .items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 400px;
+        width: 80%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .program, .new-program {
+        width: 100%;
+    }
+    .program .health, .new-program .health{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        width: 100%;
+    }
+    .program .health .items, .new-program .health .items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 400px;
+        width: 90%;
+    }
+}

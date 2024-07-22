@@ -1,0 +1,152 @@
+.plans, .new-plans {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem;
+    width: 100%;
+}
+.plans {
+    background: linear-gradient(to bottom, #f6681b, hsl(240, 3%, 15%));
+    color: #fff;
+}
+.new-plans {
+    background-color: #fff;
+    color: black;
+}
+.plans .left-plan h1 {
+    color: white;
+    margin-bottom: 2rem;
+}
+.new-plans .left-plan h1 {
+    color: black;
+    margin-bottom: 2rem;
+}
+
+.plans .middle-plan h1, .new-plans .middle-plan h1 {
+    color: aqua;
+    margin-bottom: 2rem;
+}
+.plans .right-plan h1{
+    color: #fff;
+    margin-bottom: 2rem;
+}
+.new-plans .right-plan h1 {
+    color: black;
+    margin-bottom: 2rem;
+}
+.card {
+    background-color: #656565;
+    padding: 2rem;
+    transition: all 1s ease;
+}
+.card:hover {
+    background: linear-gradient(to top, #f6681b, hsl(240, 3%, 35%));;
+    transform: scaleX(1.05) scaleY(1.1);
+   i {
+    color: #fff;
+   }
+}
+.card i {
+    color: #f6681b;
+    font-size: 3rem;
+}
+.card h2 {
+    color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.card p {
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: bolder;
+    margin: .8rem 0 .8rem 0;
+}
+.card p i {
+    color: #fff;
+    margin: 0;
+    font-size: 1.5rem;
+}
+.card .para-icon {
+    color: #fff;
+    font-size: .8rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.card .para-icon i {
+    font-size: .8rem;
+    color: #fff;
+}
+.card button {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: .7rem 1.6rem .7rem 1.6rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+/* media query */
+
+
+@media (max-width: 768px) {
+    h1 {
+        display: none;
+    }
+    .plans , .new-plans {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem 0;
+        width: 100%;
+    }
+    .plans .left-plan,.plans .middle-plan,.plans .right-plan,.new-plans .left-plan,.new-plans .middle-plan,.new-plans .right-plan{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .plans .left-plan .card,.plans .middle-plan .card,.plans .right-plan .card,  .new-plans .left-plan .card,.new-plans .middle-plan .card,.new-plans .right-plan .card{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        width: 90%;
+    }
+    .plans .left-plan .card  h2, button,.plans .middle-plan .card h2, button,.plans .right-plan .card h2, button, .plans .left-plan .card  h2, button,.new-plans .middle-plan .card h2, button,.new-plans .right-plan .card h2, button{
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+    h1 {
+        display: none;
+    }
+    .plans , .new-plans {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem 0;
+        width: 100%;
+    }
+    .plans .left-plan,.plans .middle-plan,.plans .right-plan,.new-plans .left-plan,.new-plans .middle-plan,.new-plans .right-plan{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .plans .left-plan .card,.plans .middle-plan .card,.plans .right-plan .card,  .new-plans .left-plan .card,.new-plans .middle-plan .card,.new-plans .right-plan .card{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        width: 100%;
+    }
+    .plans .left-plan .card  h2, button,.plans .middle-plan .card h2, button,.plans .right-plan .card h2, button, .plans .left-plan .card  h2, button,.new-plans .middle-plan .card h2, button,.new-plans .right-plan .card h2, button{
+        text-align: center;
+    }
+}
