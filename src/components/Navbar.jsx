@@ -21,7 +21,7 @@ function Navbar({theme, setTheme, menu, setMenu}) {
     <>
       <nav className={theme ? "nav" : "navbar"}>
         <div className="left">
-          <img src="/logo.png" />
+          <img src="./logo.png" />
         </div>
         <ul className={menu ? "hide" : "show"}>
           <li>
